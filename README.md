@@ -1,30 +1,35 @@
-# Ariyobarzan Gym — cinematic concept
+# Ariyobarzan Athletic Club
 
-Persian RTL, responsive presentation website for Ariyobarzan Gym in Afsariyeh, Tehran. Built with dependency-free HTML, CSS and JavaScript for GitHub Pages.
+An independent Persian brand and website concept. Design and build: Kiarash.
 
 ## Experience
 
-- Cinematic hero with commissioned AI concept imagery, explicitly labeled on the page.
-- Scroll-controlled canvas walkthrough using 224 frames from a public collaborative Instagram reel by `gym_yabi` and `ariyobarzan.gym`. Original source is linked beside the tour. This is a video walkthrough, not a 360° scan or a measured 3D model.
-- Two original downloadable campaign posters. The campaigns are proposals, not announced club offers.
-- Accessible poster/video dialogs, native keyboard dismissal, reduced-motion support, and a locally prepared Instagram inquiry message. No message is sent automatically, no personal information is collected, and no membership purchase is simulated.
-- Locally served Vazirmatn font with its OFL license.
+A real-time WebGL gym environment built with Three.js: instanced strength equipment, a central training track, ceiling light frames, a lounge corner, restored club mark, physical materials, shadows and a scroll-directed camera. No video playback or image sequence is used. A CSS spatial composition remains available when WebGL cannot initialize.
 
-## Verified source facts
+The environment is an artistic spatial reconstruction inspired by the public club architecture, not a measured architectural survey. The page labels it as a spatial reconstruction.
 
-Inspected the public Instagram profile and the gym introduction reel on 2026-10-19:
+## Brand
 
+The restored vector logo retains the original AB GYM letters, red weight plates and lower star emblem. The palette uses graphite, warm ivory, club red and restrained brass. Campaign posters are standalone typographic SVG artwork with an embedded licensed Persian font.
+
+## Membership and inquiries
+
+The membership selector prepares an inquiry based on the visitor's goal and preferred training time. Small group training, quiet-hour membership, partner referrals, cafe credit and company packages are explicitly proposed services. Availability, capacity, hours and prices require club confirmation. The website does not process payments, collect personal information or automatically send messages.
+
+## Source facts
+
+Club identity, address and public facility descriptions were verified against:
 - https://www.instagram.com/ariyobarzan.gym/
 - https://www.instagram.com/p/Dd6j9F9C-Mh/
 
-The profile describes 1,100 m², gym equipment, ventilation, a sound system, cafe, games and billiards. The reel shows the red central track, rectangular ceiling LEDs, strength machines, foosball and lounge/cafe spaces. The reel identifies the address as Seh Rah Afsariyeh, next to Saraye Irani and the fire station, Nikrooz shopping center, and identifies the club as men's.
-
-No unverified telephone number, current pricing, operating hours, member counts, coach credentials or transformation promises are published. This is clearly labeled a proposed demonstration, not the club's official commissioned website.
-
 ## Run
 
-Serve this directory using any static web server, for example `python -m http.server 4187`. No build step or external runtime service is required.
+Serve the directory with any static HTTP server. No runtime dependency installation, account, API key or external CDN is required.
 
-## Asset notes
+## Frontend build
 
-`assets/hero.webp` and both posters were generated specifically for this design. The people in campaign artwork are fictional. Instagram walkthrough imagery belongs to its respective creators and is credited as source media. Obtain the club/media owner's approval for long-term official commercial use.
+Three.js 0.186.1 is bundled into assets/gym.js. Application UI is in experience.js and design.css. The readable scene source is in source/gym-source.mjs; rebuild using the documented package.json command after npm install. Dependencies are pinned.
+
+## Licenses
+
+Vazirmatn uses the SIL Open Font License. Three.js uses the MIT license. Copies of both licenses are in assets/. Club identity belongs to its respective owner.
