@@ -1,35 +1,37 @@
 # Ariyobarzan Athletic Club
 
-An independent Persian brand and website concept. Design and build: Kiarash.
+Persian RTL brand experience and interactive club presentation. Design and build: Kiarash.
 
 ## Experience
 
-A real-time WebGL gym environment built with Three.js: instanced strength equipment, a central training track, ceiling light frames, a lounge corner, restored club mark, physical materials, shadows and a scroll-directed camera. No video playback or image sequence is used. A CSS spatial composition remains available when WebGL cannot initialize.
+The landing page combines the original cinematic concept artwork with richer orange, amethyst, cyan and indigo gradients. The scroll experience is a real-time Three.js gym, with light flooring, gray internal columns, low ceiling, ceiling lights and AC panels, strength equipment, red lane and entrance lounge details inspired by public footage. It is an artistic reconstruction, not a measured survey. No video or image sequence drives the scroll animation. The gallery contains real stills from the club introduction clip; the hero is clearly labeled as a design interpretation.
 
-The environment is an artistic spatial reconstruction inspired by the public club architecture, not a measured architectural survey. The page labels it as a spatial reconstruction.
+## Club portal
 
-## Brand
+Open `club.html`. The portal contains three general sample programs, seven animated movement demonstrations, a session checklist and local training log, three sample membership prices, two sample festival rules, six illustrated shop products with variants, a cart and downloadable sample invoices, and a local support-request demonstration.
 
-The restored vector logo retains the original AB GYM letters, red weight plates and lower star emblem. The palette uses graphite, warm ivory, club red and restrained brass. Campaign posters are standalone typographic SVG artwork with an embedded licensed Persian font.
+**Presentation only:** All prices, product stock, festivals and commercial packages are explicitly labeled sample/proposed content. They are not confirmed club offers. Programs are general examples, not coach-issued personal plans. There is no payment gateway, server account, live stock system or delivery of orders/support requests to the club. Data stays in the same browser through localStorage, without cross-device sync. The UI states these limits at the relevant actions. No customer action routes to Instagram.
 
-## Membership and inquiries
+## Source facts and imagery
 
-The membership selector prepares an inquiry based on the visitor's goal and preferred training time. Small group training, quiet-hour membership, partner referrals, cafe credit and company packages are explicitly proposed services. Availability, capacity, hours and prices require club confirmation. The website does not process payments, collect personal information or automatically send messages.
-
-## Source facts
-
-Club identity, address and public facility descriptions were verified against:
+Club identity, address and public facility descriptions:
 - https://www.instagram.com/ariyobarzan.gym/
-- https://www.instagram.com/p/Dd6j9F9C-Mh/
+- https://www.instagram.com/ariyobarzan.gym/reel/DChp_Atsjac/ (official introduction; gallery still source)
+- https://www.instagram.com/p/Dd6j9F9C-Mh/ (entrance, lounge and facilities)
+- https://www.instagram.com/fit.shoow1/reel/DFaL3TAIaW0/ (supplementary space reference; historical price not used)
 
-## Run
+Current phone, prices, stock and festival dates could not be reliably confirmed. Sample commercial data was authorized for presentation. Club identity and source footage remain the property of their respective owners. Original source watermark is preserved in gallery stills.
 
-Serve the directory with any static HTTP server. No runtime dependency installation, account, API key or external CDN is required.
+Movement cues link directly to Mayo Clinic or ACE official exercise demonstrations, alongside each animation. Animations are schematic illustrations; the club coach should determine individual load and range.
 
-## Frontend build
+## Run and check
 
-Three.js 0.186.1 is bundled into assets/gym.js. Application UI is in experience.js and design.css. The readable scene source is in source/gym-source.mjs; rebuild using the documented package.json command after npm install. Dependencies are pinned.
+Serve this directory with a static HTTP server. No runtime account, key or external CDN is required.
+
+`npm install` installs pinned build dependencies. `npm run build` bundles Three.js into `assets/gym.js`. `npm run check` checks all application modules; `npm test` verifies catalog pricing, discount minimums and caps, partner membership eligibility, invalid codes and bounded quantities.
+
+Readable scene code: `source/gym-source.mjs`. Landing UI: `experience.js`, `design.css`, `redesign.css`. Portal: `portal.js`, `portal-data.js`, `portal.css`, `movement.js`.
 
 ## Licenses
 
-Vazirmatn uses the SIL Open Font License. Three.js uses the MIT license. Copies of both licenses are in assets/. Club identity belongs to its respective owner.
+Vazirmatn: SIL Open Font License. Three.js: MIT. Copies are in `assets/`. New campaign artwork is in `assets/posters/`; vector shop illustrations are in `assets/shop/`. Club identity belongs to its owner.
